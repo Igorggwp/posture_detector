@@ -65,13 +65,15 @@ class _DetectorPosturaScreenState extends State<DetectorPosturaScreen> {
             );
 
             setState(() {
-              _postureStatus = angle < 60
-                  ? 'Postura correta (coluna reta)'
-                  : 'Postura incorreta (coluna curvada)';
+              _postureStatus =
+                  angle < 60
+                      ? 'Postura correta (coluna reta)'
+                      : 'Postura incorreta (coluna curvada)';
             });
           } else {
             setState(() {
-              _postureStatus = 'Não foi possível detectar todas as articulações.';
+              _postureStatus =
+                  'Não foi possível detectar todas as articulações.';
             });
           }
         } else {
@@ -125,19 +127,19 @@ class _DetectorPosturaScreenState extends State<DetectorPosturaScreen> {
         children: [
           Container(
             width: double.infinity,
-            height: 350,
             decoration: BoxDecoration(
               border: Border.all(color: Color(0xFF0047AB), width: 5),
             ),
-            child: _imageFile == null
-                ? Center(
-                    child: Icon(
-                      Icons.image,
-                      size: 100,
-                      color: Color(0xFF0047AB),
-                    ),
-                  )
-                : Image.file(_imageFile!, fit: BoxFit.cover),
+            child:
+                _imageFile == null
+                    ? Center(
+                      child: Icon(
+                        Icons.image,
+                        size: 100,
+                        color: Color(0xFF0047AB),
+                      ),
+                    )
+                    : Image.file(_imageFile!, fit: BoxFit.contain),
           ),
           SizedBox(height: 30),
           Padding(
@@ -189,7 +191,10 @@ class _DetectorPosturaScreenState extends State<DetectorPosturaScreen> {
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
                       _postureStatus,
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
               ],
