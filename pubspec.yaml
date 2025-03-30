@@ -1,9 +1,6 @@
 name: pose_detection
-
 description: "Pose detector"
-
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:

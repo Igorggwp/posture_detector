@@ -1,16 +1,30 @@
-# pose_detection
+# Pose Detector
 
-A new Flutter project.
+Este projeto é um **detector de poses** desenvolvido em **Flutter** para **Android**. 
 
-## Getting Started
+## 🛠 Tecnologias utilizadas
+- **Flutter**
+- **Dart**
+- **Android SDK**
+- **ML Kit**
 
-This project is a starting point for a Flutter application.
+## 🔧 Como executar o projeto
+1. Clone este repositório:
+   ```sh
+   git clone https://github.com/Igorggwp/posture_detector
+   ```
+2. Acesse o diretório do projeto:
+   ```sh
+   cd pose-detector
+   ```
+3. Instale as dependências:
+   ```sh
+   flutter pub get
+   ```
+4. Conecte um dispositivo Android ou inicie um emulador.
+5. Execute o aplicativo:
+   ```sh
+   flutter run
+   ```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ![Exemplo de Detecção de Pose](assets/images/pose_example.jpeg)
