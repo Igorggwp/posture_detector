@@ -15,7 +15,7 @@ Este projeto é um **detector de poses** desenvolvido em **Flutter** para **Andr
    ```
 2. Acesse o diretório do projeto:
    ```sh
-   cd pose-detector
+   cd pose_detector
    ```
 3. Instale as dependências:
    ```sh
